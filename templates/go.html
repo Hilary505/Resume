@@ -70,7 +70,7 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
     <div class="hero-container" data-aos="fade-in">
-        <img src="{% static 'assets/img/jeshi.jpg' %}" alt=""  >
+        <img src="{% static 'assets/img/jeshi.jpg' %}" alt="" width="100%" >
       <h1>Hilary Mosh</h1>
       <p>I'm , a  <span class="typed" data-typed-items="Designer, Software Developer, Freelancer,Logo Designer"></span></p>
     </div>
@@ -94,7 +94,11 @@
             <p class="">
                 Welcome to my digital playground, where I blend the artistry of design with the precision of code. As a passionate web developer, my canvas is the virtual realm, where I breathe life into user experiences that resonate with beauty and functionality.
             </p>
-            <button type="button">Download CV</button> <br>
+            <div class="text-center m-top-50">
+              <a class="btn line-btn-dark btn-icon btn-radius" href="myCV.PDF" title="" download>
+                <i class="fa fa-download"></i><input type="button" value="Download CV">
+              </a>
+            </div>
             <br><br>
             <div class="row">
               <div class="col-lg-6">
@@ -199,7 +203,7 @@
               <h4><em>Bachelors Science in Computer Technology</em></h4>
               <h5>2023</h5>
               <p><em>Maseno University</em></p>
-              <p>I'm a Final Year Pursuing Bachelors of Science in Computer Technology. I have speciliased in Software development.</p>
+              <p>I'm a Final Year Pursuing Bachelors of Science in Computer Technology. I have speciliased in Software Engineering.</p>
             </div>
             <div class="resume-item">
               <h4><em>Web Development</em></h4>
@@ -459,8 +463,8 @@
               <div class="testimonial-item" data-aos="fade-up">
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Collaborating with developer Mosh was a delight.He merged cutting-edge design with flawless development and exceeded
-                  our expectations.Mosh is a true professional who delivers outstanding results.
+                  Collaborating with developer Hilary was a delight.He merged cutting-edge design with flawless development and exceeded
+                  our expectations.Hilary  is a true professional who delivers outstanding results.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
                 <img src="{% static 'assets/img/testimonials/testimonials-1.jpg' %}" class="testimonial-img" alt="">
@@ -473,8 +477,8 @@
               <div class="testimonial-item" data-aos="fade-up" data-aos-delay="100">
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Developer Mosh turned my vision into reality.His deep knowledge of Python Django and dedication to problem solving made our start-up success.
-                  Mosh played a vital pivotal role in our early success.
+                  Developer Hilary turned my vision into reality.His deep knowledge of Python Django and dedication to problem solving made our start-up success.
+                  Hilary played a vital pivotal role in our early success.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
                 <img src="{% static 'assets/img/testimonials/testimonials-2.jpg' %}" class="testimonial-img" alt="">
@@ -545,28 +549,28 @@
               <div class="address">
                 <i class="bi bi-geo-alt"></i>
                 <h4>Location:</h4>
-                <p>A108 Adam Street, New York, NY 535022</p>
+                <p>Ciala Resort Hotel, Kisumu County, NY 535022</p>
               </div>
 
               <div class="email">
                 <i class="bi bi-envelope"></i>
                 <h4>Email:</h4>
-                <p>info@example.com</p>
+                <p>info@ciala.com</p>
               </div>
 
               <div class="phone">
                 <i class="bi bi-phone"></i>
                 <h4>Call:</h4>
-                <p>+1 5589 55488 55s</p>
+                <p>+254 5589 55488 </p>
               </div>
 
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.817743836047!2d34.66992187496454!3d-0.030800899968893784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182aa901bae62009%3A0xcb2af137fb0830f5!2sCiala%20Resort%20-%20Best%20Hotel%20in%20Kisumu!5e0!3m2!1sen!2ske!4v1702902814664!5m2!1sen!2ske" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
           </div>
 
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form  method="post" role="form" class="">
               <div class="row">
                 <div class="form-group col-md-6">
                   <label for="name">Your Name</label>
@@ -586,7 +590,7 @@
                 <textarea class="form-control" name="message" rows="10" required></textarea>
               </div>
               <div class="my-3">
-                <div class="loading">Loading</div>
+                <div class="loading"></div>
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
